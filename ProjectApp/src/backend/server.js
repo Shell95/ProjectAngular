@@ -19,6 +19,15 @@ connection.once('open', () => {
     console.log('MongoDB database connection established successfully!');
 });
 
+router.route('/issues').get((req, res) => {
+    Issue.find((err, issues) => {
+        if (err)
+            console.log(err);
+        else
+            res.json(issues);
+    });
+});
+
 router.route('/issues/:id').get((req, res) => {
     Issue.findById(req.params.id, (err, issue) => {
         if (err)
@@ -26,6 +35,17 @@ router.route('/issues/:id').get((req, res) => {
         else
             res.json(issue);
     })
+});
+
+router.route('/issues/add').post((req, res) => {
+    let issue = new Issue(req.body);
+    issue.save()
+        .then(issue => {
+            res.status(200).json({'issue': 'Added successfully'});
+        })
+        .catch(err => {
+            res.status(400).send('Failed to create new record');
+        });
 });
 
 app.use('/', router);
