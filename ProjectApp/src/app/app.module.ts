@@ -51,5 +51,6 @@ const appRoutes: Routes = [
   ],
   providers: [PostService],
   bootstrap: [AppComponent]
+
 })
 export class AppModule { }
