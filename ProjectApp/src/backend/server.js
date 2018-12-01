@@ -5,6 +5,10 @@ import mongoose from 'mongoose';
 
 import Issue from './models/Issue';
 
+var mongoose = require('mongoose');
+var mongoDB = 'mongodb://Shell95:Spring_77@ds151513.mlab.com:51513/my-db';
+mongoose.connect(mongoDB);
+
 const app = express();
 const router = express.Router();
 
