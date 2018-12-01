@@ -16,6 +16,8 @@ import { MatInputModule,
   MatExpansionModule} from '@angular/material';
 import { PostCreateComponent } from './post-create/post-create.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { AppRoutingModule } from './/app-routing.module';
+import { HomeComponent } from './home/home.component';
 
 const appRoutes: Routes = [
   {
@@ -34,7 +36,8 @@ const appRoutes: Routes = [
     AppComponent,
     PostDetailsComponent,
     PostCreateComponent,
-    SidebarComponent
+    SidebarComponent,
+    HomeComponent
   ],
   imports: [
     RouterModule.forRoot(appRoutes),
@@ -49,7 +52,8 @@ const appRoutes: Routes = [
   MatButtonModule,
   MatToolbarModule,
   MatExpansionModule,
-  MatMenuModule
+  MatMenuModule,
+  AppRoutingModule
   ],
   providers: [PostService],
   bootstrap: [AppComponent]

@@ -1,13 +1,7 @@
+<div id="container">
+  <app-sidebar></app-sidebar>
 
-<mat-toolbar color="primary"> 
-    <mat-toolbar-row>
-            <span class="title-center">Local Notice Board</span>
-    </mat-toolbar-row>
-    
-      <mat-toolbar-row>
-
-  <button mat-button [routerLink]="['/create']" color="Warn">Create</button>
-  <button mat-button [routerLink]="['/list']">List</button>
-      </mat-toolbar-row>
- </mat-toolbar>
-<router-outlet></router-outlet>
+  <div id="content">
+    <router-outlet></router-outlet>
+  </div>
+</div>
