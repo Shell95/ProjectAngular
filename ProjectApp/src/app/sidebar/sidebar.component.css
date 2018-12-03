@@ -1,24 +1,19 @@
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
 nav {
     background: #2D2E2E;
     height: 100%;
-
-    ul {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-
-        li {
-
-            a {
-                color: #fff;
-                padding: 20px;
-                display: block;
-            }
-
-            .activated {
-                background-color: #00a8ff;
-            }
-        }
-    }
-    
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+a {
+    color: #fff;
+    padding: 20px;
+    display: block;
+}
+.activated {
+    background-color: #00a8ff;
 }
