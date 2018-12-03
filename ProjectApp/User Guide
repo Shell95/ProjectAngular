@@ -1,0 +1,11 @@
+This is a local Digital Notice board app.
+User can can create a post to promote or advertise diffenrt thing or events on the main page.
+User can edit or delete it if nessary on the other page which you can Navigate to using the sidebar.
+Users can read post from other Users as well.
+
+
+Curd was working but stop after I put in the sidebar. 
+The buttons wouldn't work which bring you to the sections with other posts where you can edit, delete and veiw them.
+When I take the sidebar out the whole app won't load at all.
+
+
